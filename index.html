@@ -9,31 +9,43 @@
 
 
     <body>
-        <h2 id="header">Look A PIe!</h2>
-        <div id="locationBox">
-        <p class="p">Click the button to get your coordinates.</p>
 
-        <button onclick="getLocation()" id="location">Try It</button>
-
-        <p id="demo"></p>
-        </div>
-
-        <div id="numberBox">
-        <p class="p">Enter a number and click OK:</p>
-
-        <input id="id1" type="number" min="100" max="300" required>
-        <button onclick="myFunction()" id="number">OK</button>
-
-        <p class="p">If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        <section>
+            <div id="header">
+                <h2>Look A PIe!</h2>
+            </div>
+        </section>
         
-        <p id="demo"></p>
-        </div>
+        <secton>
+            <div id="locationBox">
+                <p class="p">Click the button to get your coordinates.</p>
 
-        <div id="workerBox">
-        <p class="p">Count numbers: <output id="result"></output></p>
-        <button onclick="startWorker()" id="worker">Start Worker</button> 
-        <button onclick="stopWorker()" id="worker">Stop Worker</button>
-        </div>
+                <button onclick="getLocation()" id="location">Try It</button>
+
+                <p id="demo"></p>
+            </div>
+        </section>
+
+        <Section>
+            <div id="numberBox">
+                <p class="p">Enter a number and click OK:</p>
+
+                <input id="id1" type="number" min="100" max="300" required>
+                <button onclick="myFunction()" id="number">OK</button>
+
+                <p class="p">If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+        
+                <p id="demo"></p>
+            </div>
+        </Section>
+
+        <Section>
+            <div id="workerBox">
+                <p class="p">Count numbers: <output id="result"></output></p>
+                <button onclick="startWorker()" id="worker">Start Worker</button> 
+                <button onclick="stopWorker()" id="worker">Stop Worker</button>
+            </div>
+        </Section>
 
         <script src="app.js"></script>
         <script src="demo_workers.js"></script>
